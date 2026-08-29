@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Deploy" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <ProjectGuid>{26C99A7D-D195-4D57-AC09-4626070684FB}</ProjectGuid>
+    <Name>Trent - The Patreon Possession Browser</Name>
+    <SafeName>Trent - The Patreon Possession Browser</SafeName>
+    <Guid>ad32607d-c122-4f6d-a1e1-b18044366f71</Guid>
+    <Teaser>Browse a fictional creator feed, save possession clips, and turn enemy units into temporary or permanent hosts.</Teaser>
+    <Description>Adds the Possession Browsers, led by Trentrouls. A scripted fictional creator feed supplies clips used to possess visible wartime enemies, body-hop after kills, and evolve a permanent Main Host.</Description>
+    <Authors>ThatOneYi</Authors>
+    <AssemblyName>PatreonPossessionBrowser</AssemblyName>
+    <RootNamespace>PatreonPossessionBrowser</RootNamespace>
+    <Civ5Path>C:\Program Files (x86)\Steam\steamapps\common\Sid Meier's Civilization V</Civ5Path>
+    <Civ5UserPath>C:\Users\ThatOneYi\Documents\My Games\Sid Meier's Civilization 5</Civ5UserPath>
+    <AffectsSavedGames>true</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>false</SupportsMultiplayer>
+    <SupportsHotSeat>false</SupportsHotSeat>
+    <SupportsMac>false</SupportsMac>
+    <ReloadAudioSystem>false</ReloadAudioSystem>
+    <ReloadLandmarkSystem>false</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>false</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>false</ReloadUnitSystem>
+    <ModActions>
+      <Action><Set>OnModActivated</Set><Type>UpdateDatabase</Type><FileName>Art/PPB_IconAtlases.xml</FileName></Action>
+      <Action><Set>OnModActivated</Set><Type>UpdateDatabase</Type><FileName>SQL/00_PPB_Core.sql</FileName></Action>
+      <Action><Set>OnModActivated</Set><Type>UpdateDatabase</Type><FileName>SQL/10_PPB_Text.sql</FileName></Action>
+    </ModActions>
+    <ModContent>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>Patreon Possession Browser Gameplay</Name>
+        <Description>Loads the persistent feed, clips, AI, and possession systems.</Description>
+        <FileName>Lua/PPBLoader.lua</FileName>
+      </Content>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>Patreon Possession Browser Interface</Name>
+        <Description>Displays the fictional creator feed, Saved Clips, hosts, and Body-Hop decisions.</Description>
+        <FileName>UI/PPBPatreonPanel.xml</FileName>
+      </Content>
+    </ModContent>
+    <ModVersion>1</ModVersion>
+    <Stability>Alpha</Stability>
+    <ModDependencies>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(1) Community Patch</Name>
+        <Id>d1b6328c-ff44-4b0d-aad7-c657f83610cd</Id>
+        <MinVersion>1</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModDependencies>
+    <ModReferences />
+    <ModBlockers />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Art\PPB_IconAtlases.xml"><SubType>XML</SubType><ImportIntoVFS>False</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Civ_256.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Civ_128.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Civ_80.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Civ_64.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Civ_45.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Civ_32.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Alpha_128.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Alpha_80.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Alpha_64.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Alpha_45.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Alpha_32.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Leader_256.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Leader_128.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Leader_80.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Leader_64.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Leader_45.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Leader_32.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Regular_256.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Regular_128.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Regular_80.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Regular_64.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Regular_45.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Regular_32.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Premium_256.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Premium_128.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Premium_80.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Premium_64.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Premium_45.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_Premium_32.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Icons\PPB_FeedThumbnail.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\DawnOfMan\PPB_DawnOfMan.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\DawnOfMan\PPB_Map.dds"><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Art\Source\PossessionBrowsersEmblem.png"><ImportIntoVFS>False</ImportIntoVFS></Content>
+    <Content Include="Art\Source\TrentroulsLeader.png"><ImportIntoVFS>False</ImportIntoVFS></Content>
+    <Content Include="SQL\00_PPB_Core.sql"><SubType>SQL</SubType><ImportIntoVFS>False</ImportIntoVFS></Content>
+    <Content Include="SQL\10_PPB_Text.sql"><SubType>SQL</SubType><ImportIntoVFS>False</ImportIntoVFS></Content>
+    <Content Include="Lua\PPBLoader.lua"><SubType>Lua</SubType><ImportIntoVFS>False</ImportIntoVFS></Content>
+    <Content Include="Lua\PPBPosts.lua"><SubType>Lua</SubType><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Lua\PPBCore.lua"><SubType>Lua</SubType><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="Lua\PPBPossession.lua"><SubType>Lua</SubType><ImportIntoVFS>True</ImportIntoVFS></Content>
+    <Content Include="UI\PPBPatreonPanel.xml"><SubType>Lua</SubType><ImportIntoVFS>False</ImportIntoVFS></Content>
+    <Content Include="UI\PPBPatreonPanel.lua"><SubType>Lua</SubType><ImportIntoVFS>False</ImportIntoVFS></Content>
+    <Content Include="README.md"><ImportIntoVFS>False</ImportIntoVFS></Content>
+    <Content Include="PATCHNOTES.md"><ImportIntoVFS>False</ImportIntoVFS></Content>
+    <Content Include="Docs\IMPLEMENTATION_NOTES.md"><ImportIntoVFS>False</ImportIntoVFS></Content>
+    <Content Include="Tools\build_art.py"><ImportIntoVFS>False</ImportIntoVFS></Content>
+    <Content Include="Tools\validate.py"><ImportIntoVFS>False</ImportIntoVFS></Content>
+    <Content Include="Tools\build_modinfo.py"><ImportIntoVFS>False</ImportIntoVFS></Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Art\" />
+    <Folder Include="Art\DawnOfMan\" />
+    <Folder Include="Art\Icons\" />
+    <Folder Include="Art\Source\" />
+    <Folder Include="Docs\" />
+    <Folder Include="Lua\" />
+    <Folder Include="SQL\" />
+    <Folder Include="UI\" />
+    <Folder Include="Tools\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
+</Project>

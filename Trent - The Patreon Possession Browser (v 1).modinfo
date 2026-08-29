@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="ad32607d-c122-4f6d-a1e1-b18044366f71" version="1">
+  <Properties>
+    <Name>Trent - The Patreon Possession Browser</Name>
+    <Teaser>Save fictional creator clips and possess enemy units as temporary or permanent hosts.</Teaser>
+    <Description>Adds the Possession Browsers, led by Trentrouls. An entirely offline creator feed supplies Clips used to possess visible wartime enemies, Body-Hop after kills, and evolve a permanent Main Host.</Description>
+    <Authors>ThatOneYi</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>0</SupportsHotSeat>
+    <SupportsMac>0</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies>
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="1" maxversion="999" title="(1) Community Patch" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="F84F9DACF86BDF79F6B9A25A1E5C8183" import="0">Art/PPB_IconAtlases.xml</File>
+    <File md5="ED42C1198A8A60F1E4C6459DBD6B83D0" import="0">SQL/00_PPB_Core.sql</File>
+    <File md5="BE14CB70C83925B07EFDCDC2C42BD432" import="0">SQL/10_PPB_Text.sql</File>
+    <File md5="F12A4EC8673A343BD0660682EB9A9D24" import="0">Lua/PPBLoader.lua</File>
+    <File md5="D67B1A71876D803BBCBE6635E9C71F63" import="1">Lua/PPBPosts.lua</File>
+    <File md5="73137409B11B2E4F9674F76A1E836005" import="1">Lua/PPBCore.lua</File>
+    <File md5="875B7F8E6C8EA98E10B83546BB7BD61F" import="1">Lua/PPBPossession.lua</File>
+    <File md5="788C0589A501CADBEF47FB45ED2EFB6E" import="0">UI/PPBPatreonPanel.xml</File>
+    <File md5="15099F4EACA6C6AC341DC3AC52CE3301" import="0">UI/PPBPatreonPanel.lua</File>
+    <File md5="A79BDA99A8509EC86E1FFFC1AE7B6D58" import="1">Art/Icons/PPB_Alpha_128.dds</File>
+    <File md5="CC273A6924E9BDDA459B80A12DDE77F6" import="1">Art/Icons/PPB_Alpha_32.dds</File>
+    <File md5="A260DDD141677157B544FDBF3889C338" import="1">Art/Icons/PPB_Alpha_45.dds</File>
+    <File md5="8E120367A1A17B410AE72938DD206E3A" import="1">Art/Icons/PPB_Alpha_64.dds</File>
+    <File md5="A7D49F362D30EC7F32E3C00EC6086D6A" import="1">Art/Icons/PPB_Alpha_80.dds</File>
+    <File md5="5DCE953C1453AD3E9C13BD983BBA5FEE" import="1">Art/Icons/PPB_Civ_128.dds</File>
+    <File md5="B4E0853635B03B7859CBA15AC1C53AB3" import="1">Art/Icons/PPB_Civ_256.dds</File>
+    <File md5="6B9B2C8EA7E7C6420B3E6ADF1E7BEB6A" import="1">Art/Icons/PPB_Civ_32.dds</File>
+    <File md5="C15149F5AAC8E3D793F7D0D1C9F32C15" import="1">Art/Icons/PPB_Civ_45.dds</File>
+    <File md5="A2F3AB5263649DF6354EA5271BF8FBDE" import="1">Art/Icons/PPB_Civ_64.dds</File>
+    <File md5="637E7E5D9811D8110C4888AEF0C26408" import="1">Art/Icons/PPB_Civ_80.dds</File>
+    <File md5="5DCE953C1453AD3E9C13BD983BBA5FEE" import="1">Art/Icons/PPB_FeedThumbnail.dds</File>
+    <File md5="B293B82B1B2F5E60AF034F2B2B4A05C7" import="1">Art/Icons/PPB_Leader_128.dds</File>
+    <File md5="9EF9DA151B1BE9749DC46C930CA796A8" import="1">Art/Icons/PPB_Leader_256.dds</File>
+    <File md5="A7AAA4FE3E9885C16E74ADCDAE8EEDF0" import="1">Art/Icons/PPB_Leader_32.dds</File>
+    <File md5="D8052BFAB3A72BC890B3805FB87155F0" import="1">Art/Icons/PPB_Leader_45.dds</File>
+    <File md5="99EC07AED7EC4B6E5B1AA0A3C1AC7D66" import="1">Art/Icons/PPB_Leader_64.dds</File>
+    <File md5="6FFD134A15CAE15C9EDD1FBD87896A76" import="1">Art/Icons/PPB_Leader_80.dds</File>
+    <File md5="5DCE953C1453AD3E9C13BD983BBA5FEE" import="1">Art/Icons/PPB_Premium_128.dds</File>
+    <File md5="B4E0853635B03B7859CBA15AC1C53AB3" import="1">Art/Icons/PPB_Premium_256.dds</File>
+    <File md5="6B9B2C8EA7E7C6420B3E6ADF1E7BEB6A" import="1">Art/Icons/PPB_Premium_32.dds</File>
+    <File md5="C15149F5AAC8E3D793F7D0D1C9F32C15" import="1">Art/Icons/PPB_Premium_45.dds</File>
+    <File md5="A2F3AB5263649DF6354EA5271BF8FBDE" import="1">Art/Icons/PPB_Premium_64.dds</File>
+    <File md5="637E7E5D9811D8110C4888AEF0C26408" import="1">Art/Icons/PPB_Premium_80.dds</File>
+    <File md5="B293B82B1B2F5E60AF034F2B2B4A05C7" import="1">Art/Icons/PPB_Regular_128.dds</File>
+    <File md5="9EF9DA151B1BE9749DC46C930CA796A8" import="1">Art/Icons/PPB_Regular_256.dds</File>
+    <File md5="A7AAA4FE3E9885C16E74ADCDAE8EEDF0" import="1">Art/Icons/PPB_Regular_32.dds</File>
+    <File md5="D8052BFAB3A72BC890B3805FB87155F0" import="1">Art/Icons/PPB_Regular_45.dds</File>
+    <File md5="99EC07AED7EC4B6E5B1AA0A3C1AC7D66" import="1">Art/Icons/PPB_Regular_64.dds</File>
+    <File md5="6FFD134A15CAE15C9EDD1FBD87896A76" import="1">Art/Icons/PPB_Regular_80.dds</File>
+    <File md5="B7E27B6D7DC1CA96C59192229B92CA3A" import="1">Art/DawnOfMan/PPB_DawnOfMan.dds</File>
+    <File md5="B046BA404F3CDA64028B8E748092F57A" import="1">Art/DawnOfMan/PPB_Map.dds</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Art/PPB_IconAtlases.xml</UpdateDatabase>
+      <UpdateDatabase>SQL/00_PPB_Core.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/10_PPB_Text.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="Lua/PPBLoader.lua">
+      <Name>Patreon Possession Browser Gameplay</Name>
+      <Description>Persistent feed, Clips, AI, and possession systems.</Description>
+    </EntryPoint>
+    <EntryPoint type="InGameUIAddin" file="UI/PPBPatreonPanel.xml">
+      <Name>Patreon Possession Browser Interface</Name>
+      <Description>Creator feed, Saved Clips, targets, hosts, and Body-Hop decisions.</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

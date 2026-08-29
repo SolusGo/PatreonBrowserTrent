@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context Name="PPBPatreonPanel">
+  <Instance Name="PPBPostInstance">
+    <Grid ID="PostCard" Size="820,186" Style="GridBlackIndent8">
+      <Image ID="Thumbnail" Anchor="L,T" Offset="10,10" Size="116,116" Texture="Art/Icons/PPB_FeedThumbnail.dds" />
+      <Label ID="PostTitle" Anchor="L,T" Offset="138,9" Size="662,24" Font="TwCenMT20" FontStyle="Shadow" String="" ColorSet="Beige_Black_Alpha" />
+      <Label ID="PostMeta" Anchor="L,T" Offset="138,35" Size="662,18" Font="TwCenMT14" FontStyle="Shadow" String="" ColorSet="Green_Black_Alpha" />
+      <Label ID="PostText" Anchor="L,T" Offset="138,57" Size="662,48" WrapWidth="662" Font="TwCenMT15" FontStyle="Shadow" String="" ColorSet="Beige_Black_Alpha" />
+      <Label ID="NegativeText" Anchor="L,T" Offset="138,105" Size="662,28" WrapWidth="662" Font="TwCenMT14" FontStyle="Shadow" String="" ColorSet="Red_Black_Alpha" Hidden="1" />
+      <Label ID="CommentedText" Anchor="L,T" Offset="138,137" Size="662,36" WrapWidth="662" Font="TwCenMT14" FontStyle="Shadow" String="" ColorSet="Green_Black_Alpha" Hidden="1" />
+      <GridButton ID="Comment1" Anchor="L,B" Offset="138,10" Size="214,34" Style="BaseButton" String="" />
+      <GridButton ID="Comment2" Anchor="L,B" Offset="358,10" Size="214,34" Style="BaseButton" String="" />
+      <GridButton ID="Comment3" Anchor="L,B" Offset="578,10" Size="214,34" Style="BaseButton" String="" />
+    </Grid>
+  </Instance>
+
+  <Instance Name="PPBClipInstance">
+    <Grid ID="ClipCard" Size="366,80" Style="GridBlackIndent8">
+      <Label ID="ClipTitle" Anchor="L,T" Offset="10,8" Size="258,22" Font="TwCenMT18" FontStyle="Shadow" String="" ColorSet="Beige_Black_Alpha" />
+      <Label ID="ClipSource" Anchor="L,T" Offset="10,34" Size="258,36" WrapWidth="258" Font="TwCenMT14" FontStyle="Shadow" String="" ColorSet="Beige_Black_Alpha" />
+      <GridButton ID="SelectClip" Anchor="R,C" Offset="10,0" Size="82,34" Style="BaseButton" String="" />
+    </Grid>
+  </Instance>
+
+  <Instance Name="PPBTargetInstance">
+    <Grid ID="TargetCard" Size="428,108" Style="GridBlackIndent8">
+      <Label ID="TargetText" Anchor="L,T" Offset="10,8" Size="406,62" WrapWidth="406" Font="TwCenMT15" FontStyle="Shadow" String="" ColorSet="Beige_Black_Alpha" />
+      <GridButton ID="PossessButton" Anchor="L,B" Offset="10,8" Size="150,32" Style="BaseButton" String="" />
+      <GridButton ID="MainButton" Anchor="R,B" Offset="10,8" Size="190,32" Style="BaseButton" String="" Hidden="1" />
+    </Grid>
+  </Instance>
+
+  <GridButton ID="PatreonButton" Anchor="R,T" Offset="342,4" Size="202,34" Style="BaseButton" String="PATREON" Hidden="1" />
+
+  <Grid ID="Panel" Anchor="C,C" Size="930,700" Style="Grid9DetailFive140" Hidden="1" ConsumeMouse="1">
+    <Label ID="Title" Anchor="C,T" Offset="0,18" Size="880,34" Font="TwCenMT24" FontStyle="Shadow" String="" ColorSet="Beige_Black_Alpha" />
+    <Label ID="Subtitle" Anchor="C,T" Offset="0,50" Size="880,38" WrapWidth="880" Font="TwCenMT16" FontStyle="Shadow" String="" ColorSet="Beige_Black_Alpha" />
+    <Grid Anchor="C,T" Offset="0,91" Size="884,1" Style="Grid9Bar" />
+    <GridButton ID="FeedTab" Anchor="L,T" Offset="24,101" Size="190,34" Style="BaseButton" String="" />
+    <GridButton ID="ClipsTab" Anchor="L,T" Offset="220,101" Size="190,34" Style="BaseButton" String="" />
+    <GridButton ID="HostTab" Anchor="L,T" Offset="416,101" Size="190,34" Style="BaseButton" String="" />
+    <Label ID="NextPostLabel" Anchor="R,T" Offset="26,108" Size="282,24" Font="TwCenMT14" FontStyle="Shadow" String="" ColorSet="Green_Black_Alpha" />
+
+    <Grid ID="FeedPanel" Anchor="C,T" Offset="0,143" Size="884,496" Style="GridBlackIndent8">
+      <ScrollPanel ID="PostScroll" Anchor="C,T" Offset="0,8" Size="850,404" Vertical="1">
+        <Stack ID="PostStack" Anchor="L,T" Offset="4,4" Size="824,0" StackGrowth="Bottom" Padding="6" />
+      </ScrollPanel>
+      <Label ID="FeedStatus" Anchor="L,B" Offset="18,12" Size="510,48" WrapWidth="510" Font="TwCenMT14" FontStyle="Shadow" String="" ColorSet="Red_Black_Alpha" />
+      <GridButton ID="EssayButton" Anchor="R,B" Offset="18,18" Size="304,38" Style="BaseButton" String="" />
+    </Grid>
+
+    <Grid ID="ClipsPanel" Anchor="C,T" Offset="0,143" Size="884,496" Style="GridBlackIndent8" Hidden="1">
+      <Label ID="ClipHeader" Anchor="L,T" Offset="18,10" Size="366,26" Font="TwCenMT20" FontStyle="Shadow" String="" ColorSet="Beige_Black_Alpha" />
+      <ScrollPanel ID="ClipScroll" Anchor="L,T" Offset="12,42" Size="386,432" Vertical="1">
+        <Stack ID="ClipStack" Anchor="L,T" Offset="4,4" Size="368,0" StackGrowth="Bottom" Padding="5" />
+      </ScrollPanel>
+      <Label ID="NoClipsLabel" Anchor="L,T" Offset="28,92" Size="344,62" WrapWidth="344" Font="TwCenMT16" FontStyle="Shadow" String="" ColorSet="Beige_Black_Alpha" Hidden="1" />
+      <Grid Anchor="L,T" Offset="405,10" Size="1,466" Style="Grid9Bar" />
+      <Label ID="TargetHeader" Anchor="L,T" Offset="420,10" Size="440,26" Font="TwCenMT20" FontStyle="Shadow" String="AVAILABLE HOSTS" ColorSet="Beige_Black_Alpha" />
+      <ScrollPanel ID="TargetScroll" Anchor="L,T" Offset="414,42" Size="454,432" Vertical="1">
+        <Stack ID="TargetStack" Anchor="L,T" Offset="4,4" Size="430,0" StackGrowth="Bottom" Padding="5" />
+      </ScrollPanel>
+      <Label ID="NoTargetsLabel" Anchor="L,T" Offset="430,92" Size="420,106" WrapWidth="420" Font="TwCenMT16" FontStyle="Shadow" String="" ColorSet="Beige_Black_Alpha" Hidden="1" />
+    </Grid>
+
+    <Grid ID="HostPanel" Anchor="C,T" Offset="0,143" Size="884,496" Style="GridBlackIndent8" Hidden="1">
+      <Label ID="MainHostTitle" Anchor="C,T" Offset="0,26" Size="820,32" Font="TwCenMT24" FontStyle="Shadow" String="MAIN HOST" ColorSet="Beige_Black_Alpha" />
+      <Image ID="MainHostImage" Anchor="C,T" Offset="0,70" Size="160,160" Texture="Art/Icons/PPB_FeedThumbnail.dds" />
+      <Label ID="MainHostStatus" Anchor="C,T" Offset="0,242" Size="760,100" WrapWidth="760" Font="TwCenMT18" FontStyle="Shadow" String="" ColorSet="Beige_Black_Alpha" />
+      <Label ID="TemporaryStatus" Anchor="C,T" Offset="0,346" Size="760,34" Font="TwCenMT16" FontStyle="Shadow" String="" ColorSet="Green_Black_Alpha" />
+      <GridButton ID="EvolveButton" Anchor="L,B" Offset="178,30" Size="246,40" Style="BaseButton" String="" />
+      <GridButton ID="ReleaseButton" Anchor="R,B" Offset="178,30" Size="246,40" Style="BaseButton" String="" />
+    </Grid>
+
+    <GridButton ID="RefreshButton" Anchor="L,B" Offset="24,18" Size="120,36" Style="BaseButton" String="" />
+    <GridButton ID="CloseButton" Anchor="R,B" Offset="24,18" Size="120,36" Style="BaseButton" String="" />
+  </Grid>
+
+  <Grid ID="BodyHopPopup" Anchor="C,C" Size="610,330" Style="Grid9DetailFive140" Hidden="1" ConsumeMouse="1">
+    <Label ID="BodyHopTitle" Anchor="C,T" Offset="0,24" Size="560,34" Font="TwCenMT24" FontStyle="Shadow" String="" ColorSet="Beige_Black_Alpha" />
+    <Grid Anchor="C,T" Offset="0,66" Size="560,1" Style="Grid9Bar" />
+    <Label ID="BodyHopText" Anchor="C,T" Offset="0,86" Size="540,142" WrapWidth="540" Font="TwCenMT18" FontStyle="Shadow" String="" ColorSet="Beige_Black_Alpha" />
+    <GridButton ID="BodyHopStay" Anchor="L,B" Offset="28,26" Size="252,42" Style="BaseButton" String="" />
+    <GridButton ID="BodyHopAccept" Anchor="R,B" Offset="28,26" Size="252,42" Style="BaseButton" String="" />
+  </Grid>
+
+  <Script file="PPBPatreonPanel.lua" />
+</Context>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <IconTextureAtlases>
+    <Row><Atlas>PPB_CIV_ATLAS</Atlas><IconSize>256</IconSize><Filename>Art/Icons/PPB_Civ_256.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_CIV_ATLAS</Atlas><IconSize>128</IconSize><Filename>Art/Icons/PPB_Civ_128.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_CIV_ATLAS</Atlas><IconSize>80</IconSize><Filename>Art/Icons/PPB_Civ_80.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_CIV_ATLAS</Atlas><IconSize>64</IconSize><Filename>Art/Icons/PPB_Civ_64.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_CIV_ATLAS</Atlas><IconSize>45</IconSize><Filename>Art/Icons/PPB_Civ_45.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_CIV_ATLAS</Atlas><IconSize>32</IconSize><Filename>Art/Icons/PPB_Civ_32.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+
+    <Row><Atlas>PPB_CIV_ALPHA_ATLAS</Atlas><IconSize>128</IconSize><Filename>Art/Icons/PPB_Alpha_128.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_CIV_ALPHA_ATLAS</Atlas><IconSize>80</IconSize><Filename>Art/Icons/PPB_Alpha_80.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_CIV_ALPHA_ATLAS</Atlas><IconSize>64</IconSize><Filename>Art/Icons/PPB_Alpha_64.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_CIV_ALPHA_ATLAS</Atlas><IconSize>45</IconSize><Filename>Art/Icons/PPB_Alpha_45.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_CIV_ALPHA_ATLAS</Atlas><IconSize>32</IconSize><Filename>Art/Icons/PPB_Alpha_32.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+
+    <Row><Atlas>PPB_LEADER_ATLAS</Atlas><IconSize>256</IconSize><Filename>Art/Icons/PPB_Leader_256.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_LEADER_ATLAS</Atlas><IconSize>128</IconSize><Filename>Art/Icons/PPB_Leader_128.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_LEADER_ATLAS</Atlas><IconSize>80</IconSize><Filename>Art/Icons/PPB_Leader_80.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_LEADER_ATLAS</Atlas><IconSize>64</IconSize><Filename>Art/Icons/PPB_Leader_64.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_LEADER_ATLAS</Atlas><IconSize>45</IconSize><Filename>Art/Icons/PPB_Leader_45.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_LEADER_ATLAS</Atlas><IconSize>32</IconSize><Filename>Art/Icons/PPB_Leader_32.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+
+    <Row><Atlas>PPB_REGULAR_ATLAS</Atlas><IconSize>256</IconSize><Filename>Art/Icons/PPB_Regular_256.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_REGULAR_ATLAS</Atlas><IconSize>128</IconSize><Filename>Art/Icons/PPB_Regular_128.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_REGULAR_ATLAS</Atlas><IconSize>80</IconSize><Filename>Art/Icons/PPB_Regular_80.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_REGULAR_ATLAS</Atlas><IconSize>64</IconSize><Filename>Art/Icons/PPB_Regular_64.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_REGULAR_ATLAS</Atlas><IconSize>45</IconSize><Filename>Art/Icons/PPB_Regular_45.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_REGULAR_ATLAS</Atlas><IconSize>32</IconSize><Filename>Art/Icons/PPB_Regular_32.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+
+    <Row><Atlas>PPB_PREMIUM_ATLAS</Atlas><IconSize>256</IconSize><Filename>Art/Icons/PPB_Premium_256.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_PREMIUM_ATLAS</Atlas><IconSize>128</IconSize><Filename>Art/Icons/PPB_Premium_128.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_PREMIUM_ATLAS</Atlas><IconSize>80</IconSize><Filename>Art/Icons/PPB_Premium_80.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_PREMIUM_ATLAS</Atlas><IconSize>64</IconSize><Filename>Art/Icons/PPB_Premium_64.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_PREMIUM_ATLAS</Atlas><IconSize>45</IconSize><Filename>Art/Icons/PPB_Premium_45.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+    <Row><Atlas>PPB_PREMIUM_ATLAS</Atlas><IconSize>32</IconSize><Filename>Art/Icons/PPB_Premium_32.dds</Filename><IconsPerRow>1</IconsPerRow><IconsPerColumn>1</IconsPerColumn></Row>
+  </IconTextureAtlases>
+</GameData>

@@ -1,0 +1,8 @@
+.validation/
+.vs/
+bin/
+obj/
+*.suo
+*.user
+*.log
+
