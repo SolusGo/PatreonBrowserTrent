@@ -1,5 +1,9 @@
 # Patch Notes
 
+## Version 1 — Player-only civilization selection — 2026-09-06
+
+- Set the Possession Browsers civilization to remain human-playable while preventing the AI from selecting it.
+
 ## Version 1 — 2026-08-29
 
 ### Added
@@ -44,4 +48,3 @@
 - Requires an in-game single-player QA pass; repository checks cover SQL, XML, texture payloads, localization references, and static Lua syntax only.
 - Nonstandard custom state added to units by unrelated mods cannot be copied generically during an ownership transfer.
 - The diplomacy scene uses America's base scene and the custom Dawn of Man has no narration audio.
-
