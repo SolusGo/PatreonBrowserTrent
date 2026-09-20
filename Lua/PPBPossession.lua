@@ -14,6 +14,20 @@ local PROMO_EVOLUTION = {
     GameInfoTypes.PROMOTION_PPB_EVOLUTION_3
 }
 local DOMAIN_AIR = GameInfoTypes.DOMAIN_AIR
+local TRENT_UNIQUE_TYPES = {}
+for _, typeName in ipairs({
+    "UNIT_UNA_TRENTROULS",
+    "UNIT_UNA_BUDDY",
+    "UNIT_DOMINION_TRENTROULS",
+    "UNIT_ULTIMATE_GOLDEN_RETRIEVER",
+    "UNIT_TRENT_HOPELESS_ROMANTIC",
+    "UNIT_TRENT_IPAD_READER",
+    "UNIT_TRENT_UNA_COURT_BUTLER",
+    "UNIT_PPB_PATREON_REGULAR"
+}) do
+    local unitType = GameInfoTypes[typeName]
+    if unitType ~= nil then TRENT_UNIQUE_TYPES[unitType] = true end
+end
 local possessionTransfer = false
 local currentBattle = nil
 
@@ -159,6 +173,7 @@ local function IsCombatUnit(unit)
 end
 
 local function IsExcludedUnit(unit)
+    if unit ~= nil and TRENT_UNIQUE_TYPES[unit:GetUnitType()] then return true end
     if not IsCombatUnit(unit) then return true end
     local info = UnitInfo(unit)
     if info == nil or unit:GetDomainType() == DOMAIN_AIR then return true end
