@@ -17,13 +17,7 @@ local DOMAIN_AIR = GameInfoTypes.DOMAIN_AIR
 local TRENT_UNIQUE_TYPES = {}
 for _, typeName in ipairs({
     "UNIT_UNA_TRENTROULS",
-    "UNIT_UNA_BUDDY",
-    "UNIT_DOMINION_TRENTROULS",
-    "UNIT_ULTIMATE_GOLDEN_RETRIEVER",
-    "UNIT_TRENT_HOPELESS_ROMANTIC",
-    "UNIT_TRENT_IPAD_READER",
-    "UNIT_TRENT_UNA_COURT_BUTLER",
-    "UNIT_PPB_PATREON_REGULAR"
+    "UNIT_DOMINION_TRENTROULS"
 }) do
     local unitType = GameInfoTypes[typeName]
     if unitType ~= nil then TRENT_UNIQUE_TYPES[unitType] = true end

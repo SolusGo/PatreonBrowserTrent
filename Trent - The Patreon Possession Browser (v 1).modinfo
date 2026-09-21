@@ -29,9 +29,9 @@
     <File md5="F12A4EC8673A343BD0660682EB9A9D24" import="0">Lua/PPBLoader.lua</File>
     <File md5="D67B1A71876D803BBCBE6635E9C71F63" import="1">Lua/PPBPosts.lua</File>
     <File md5="73137409B11B2E4F9674F76A1E836005" import="1">Lua/PPBCore.lua</File>
-    <File md5="C221802921F98AB8DE571107A77C3450" import="1">Lua/PPBPossession.lua</File>
+    <File md5="856F6E210A67C39517F66A227A26BBC9" import="1">Lua/PPBPossession.lua</File>
     <File md5="788C0589A501CADBEF47FB45ED2EFB6E" import="0">UI/PPBPatreonPanel.xml</File>
-    <File md5="E71D1C18B0EBC12553DDC4586B387767" import="0">UI/PPBPatreonPanel.lua</File>
+    <File md5="C5069544CCC018016442E7E70B287E55" import="0">UI/PPBPatreonPanel.lua</File>
     <File md5="A79BDA99A8509EC86E1FFFC1AE7B6D58" import="1">Art/Icons/PPB_Alpha_128.dds</File>
     <File md5="CC273A6924E9BDDA459B80A12DDE77F6" import="1">Art/Icons/PPB_Alpha_32.dds</File>
     <File md5="A260DDD141677157B544FDBF3889C338" import="1">Art/Icons/PPB_Alpha_45.dds</File>
